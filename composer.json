@@ -1,0 +1,9 @@
+{
+    "name": "defr/crossword-field_type",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Defr\\CrosswordFieldType\\": "src/"
+        }
+    }
+}
