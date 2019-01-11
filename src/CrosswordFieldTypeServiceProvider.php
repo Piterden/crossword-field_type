@@ -39,20 +39,14 @@ class CrosswordFieldTypeServiceProvider extends AddonServiceProvider
      *
      * @type array|null
      */
-    protected $routes = [
-        'crossword/words/find/{page}/{mask}' => 'Defr\CrosswordFieldType\Http\Controller\WordsController@find',
-        'crossword/words/count/{mask}'       => 'Defr\CrosswordFieldType\Http\Controller\WordsController@count',
-        'crossword/clues/find/{word}'        => 'Defr\CrosswordFieldType\Http\Controller\CluesController@find',
-    ];
+    protected $routes = [];
 
     /**
      * The addon middleware.
      *
      * @type array|null
      */
-    protected $middleware = [
-        \Defr\CrosswordFieldType\Http\Middleware\CorsMiddleware::class,
-    ];
+    protected $middleware = [];
 
     /**
      * Addon group middleware.
